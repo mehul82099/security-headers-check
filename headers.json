@@ -1,0 +1,172 @@
+{
+  "verified_at": "2026-11-01",
+  "oshp_data_update_utc": "2026-10-18 07:04:36",
+  "sources": [
+    {
+      "name": "OWASP Secure Headers Project - ci/headers_add.json",
+      "url": "https://github.com/OWASP/secure-headers-project/blob/master/ci/headers_add.json"
+    },
+    {
+      "name": "OWASP Secure Headers Project - ci/headers_remove.json",
+      "url": "https://github.com/OWASP/secure-headers-project/blob/master/ci/headers_remove.json"
+    },
+    {
+      "name": "OWASP Secure Headers Project - response headers reference",
+      "url": "https://github.com/OWASP/secure-headers-project/blob/master/mainsite/01_headers.md"
+    },
+    {
+      "name": "RFC 6797 - HTTP Strict Transport Security (HSTS)",
+      "url": "https://www.rfc-editor.org/rfc/rfc6797"
+    }
+  ],
+  "recommended": [
+    {
+      "name": "Cache-Control",
+      "value": "no-store, max-age=0"
+    },
+    {
+      "name": "Clear-Site-Data",
+      "value": "\"cache\",\"cookies\",\"storage\""
+    },
+    {
+      "name": "Content-Security-Policy",
+      "value": "default-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
+    },
+    {
+      "name": "Cross-Origin-Embedder-Policy",
+      "value": "require-corp"
+    },
+    {
+      "name": "Cross-Origin-Opener-Policy",
+      "value": "same-origin"
+    },
+    {
+      "name": "Cross-Origin-Resource-Policy",
+      "value": "same-origin"
+    },
+    {
+      "name": "Permissions-Policy",
+      "value": "accelerometer=(), autoplay=(), camera=(), cross-origin-isolated=(), display-capture=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(self), usb=(), web-share=(), xr-spatial-tracking=(), clipboard-read=(), clipboard-write=(), gamepad=(), hid=(), idle-detection=(), interest-cohort=(), serial=(), unload=()"
+    },
+    {
+      "name": "Referrer-Policy",
+      "value": "no-referrer"
+    },
+    {
+      "name": "Strict-Transport-Security",
+      "value": "max-age=63072000; includeSubDomains"
+    },
+    {
+      "name": "X-Content-Type-Options",
+      "value": "nosniff"
+    },
+    {
+      "name": "X-DNS-Prefetch-Control",
+      "value": "off"
+    },
+    {
+      "name": "X-Frame-Options",
+      "value": "deny"
+    },
+    {
+      "name": "X-Permitted-Cross-Domain-Policies",
+      "value": "none"
+    }
+  ],
+  "info_leak": [
+    "Host-Header",
+    "K-Proxy-Request",
+    "Liferay-Portal",
+    "OracleCommerceCloud-Version",
+    "Pega-Host",
+    "Powered-By",
+    "Product",
+    "Server",
+    "SourceMap",
+    "TeamCity-Node-Id",
+    "X-AspNet-Version",
+    "X-AspNetMvc-Version",
+    "X-Atmosphere-error",
+    "X-Atmosphere-first-request",
+    "X-Atmosphere-tracking-id",
+    "X-B3-ParentSpanId",
+    "X-B3-Sampled",
+    "X-B3-SpanId",
+    "X-B3-TraceId",
+    "X-Backside-Transport",
+    "X-BEServer",
+    "X-CalculatedBETarget",
+    "X-CF-Powered-By",
+    "X-CMS",
+    "X-Cocoon-Version",
+    "X-Content-Encoded-By",
+    "X-Datadog-Origin",
+    "X-Datadog-Parent-Id",
+    "X-Datadog-Sampling-Priority",
+    "X-Datadog-Tags",
+    "X-Datadog-Trace-Id",
+    "X-DiagInfo",
+    "X-dtAgentId",
+    "X-dtHealthCheck",
+    "X-dtInjectedServlet",
+    "X-Envoy-Attempt-Count",
+    "X-Envoy-External-Address",
+    "X-Envoy-Internal",
+    "X-Envoy-Original-Dst-Host",
+    "X-Envoy-Upstream-Service-Time",
+    "X-FEServer",
+    "X-Framework",
+    "X-Generated-By",
+    "X-Generator",
+    "X-Gitlab-Meta",
+    "X-Jitsi-Release",
+    "X-Joomla-Version",
+    "X-Kong-Admin-Latency",
+    "X-Kong-Client-Latency",
+    "X-Kong-Proxy-Latency",
+    "X-Kong-Request-Id",
+    "X-Kong-Response-Latency",
+    "X-Kong-Third-Party-Latency",
+    "X-Kong-Total-Latency",
+    "X-Kong-Upstream-Latency",
+    "X-Kong-Upstream-Status",
+    "X-Kubernetes-PF-FlowSchema-UI",
+    "X-Kubernetes-PF-PriorityLevel-UID",
+    "X-LiteSpeed-Cache",
+    "X-Litespeed-Cache-Control",
+    "X-LiteSpeed-Purge",
+    "X-LiteSpeed-Tag",
+    "X-LiteSpeed-Vary",
+    "X-Mod-Pagespeed",
+    "X-Nextjs-Cache",
+    "X-Nextjs-Matched-Path",
+    "X-Nextjs-Page",
+    "X-Nextjs-Redirect",
+    "X-Old-Content-Length",
+    "X-OneAgent-JS-Injection",
+    "X-OWA-Version",
+    "X-Page-Speed",
+    "X-Php-Version",
+    "X-Powered-By",
+    "X-Powered-By-Plesk",
+    "X-Powered-CMS",
+    "X-Redirect-By",
+    "X-ruxit-JS-Agent",
+    "X-Server-Powered-By",
+    "X-SourceFiles",
+    "X-SourceMap",
+    "X-Turbo-Charged-By",
+    "X-Tyk-Trace-Id",
+    "X-Umbraco-Version",
+    "X-Varnish-Backend",
+    "X-Varnish-Server",
+    "X-Woodpecker-Version"
+  ],
+  "deprecated": [
+    "feature-policy",
+    "expect-ct",
+    "public-key-pins",
+    "x-xss-protection",
+    "pragma"
+  ]
+}
